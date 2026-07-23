@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Support — Motivation</title>
+<meta name="description" content="Support page for the Motivation app." />
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f6f5fb;
+    --card: #ffffff;
+    --card-border: #e6e3f5;
+    --ink: #232338;
+    --ink2: #5b5875;
+    --ink3: #8b87a3;
+    --accent: #6f5ce6;
+    --accent-bg: rgba(111, 92, 230, 0.1);
+    --shadow: 0 20px 45px rgba(60, 50, 110, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131120;
+      --card: #1c1930;
+      --card-border: #2c2846;
+      --ink: #f1f0fb;
+      --ink2: #b9b6d1;
+      --ink3: #8a86a8;
+      --accent: #a798ff;
+      --accent-bg: rgba(167, 152, 255, 0.14);
+      --shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+    background: var(--accent-bg);
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 34px;
+    letter-spacing: -0.02em;
+    margin: 0 0 12px;
+  }
+  .lede {
+    font-size: 17px;
+    color: var(--ink2);
+    margin: 0 0 40px;
+    max-width: 52ch;
+  }
+  section {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 28px 28px;
+    margin-bottom: 20px;
+  }
+  section h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink3);
+    margin: 0 0 16px;
+  }
+  .contact-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .contact-row a {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .contact-row a:hover { color: var(--accent); }
+  .mail-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: var(--accent-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mail-icon svg { display: block; }
+  .response-time p {
+    margin: 0;
+    font-size: 15px;
+    color: var(--ink2);
+  }
+  .faq-item + .faq-item {
+    margin-top: 22px;
+    padding-top: 22px;
+    border-top: 1px solid var(--card-border);
+  }
+  .faq-item h3 {
+    font-size: 16px;
+    margin: 0 0 6px;
+  }
+  .faq-item p {
+    margin: 0;
+    font-size: 15px;
+    color: var(--ink2);
+  }
+  footer {
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink3);
+    margin-top: 48px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="badge">Motivation · Support</span>
+    <h1>Support</h1>
+    <p class="lede">
+      Welcome to the support page for Motivation. If you have any questions, encounter a bug, or would like to
+      suggest a new feature, we'd love to hear from you.
+    </p>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="contact-row">
+        <span class="mail-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <rect x="2.5" y="4.5" width="19" height="15" rx="3" stroke="#6f5ce6" stroke-width="1.7"/>
+            <path d="M4 7l8 6 8-6" stroke="#6f5ce6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <a href="mailto:lifeosapp@yandex.ru">lifeosapp@yandex.ru</a>
+      </div>
+    </section>
+
+    <section class="response-time">
+      <h2>Response Time</h2>
+      <p>We aim to respond to all inquiries within 48 business hours.</p>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>The app is crashing. What should I do?</h3>
+        <p>
+          Please make sure you are using the latest version of the app. If the problem persists, contact us and
+          include your device model and iOS version.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>I found a bug.</h3>
+        <p>Please send us a detailed description of the issue along with screenshots if possible.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>I have a feature request.</h3>
+        <p>We appreciate your feedback and are always looking for ways to improve the app.</p>
+      </div>
+    </section>
+
+    <footer>&copy; <span id="year"></span> Motivation</footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
